@@ -6,7 +6,7 @@ if (Se), else (Senão), elif (Senão se)
 idade = 28
 
 """
-# Estrutura condicional em C#: if () {}, else if () {}, else () {}
+# Estrutura condicional em C#: if (...) { ... }, else if (...) { ... }, else { ... }
 if (idade < 18) {
     print("Menor de idade");
 } else if (idade == 18) {

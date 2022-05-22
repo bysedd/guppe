@@ -1,15 +1,11 @@
-from math import factorial
+n = int(input('\033[0:34m!\033[m'))
+f = 1
 
-x = int(input("!"))
-f = 0
-
-if x < 0:
-    print("Fatorial não existe")
-
-elif x == 0:
-    f = 1
-
+if n < 0:
+    print('\033[0:31mFatorial não existe\033[m')
 else:
-    f = factorial(x)
-    
-print(f"!{x} = {f}")
+    print()
+    for c in range(f, n + 1):
+        f *= c
+    print(f'Result = \033[0:32m{f}\033[m')
+    print(f'Contains \033[0:34m{len(str(f))}\033[m number(s)')

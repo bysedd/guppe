@@ -57,7 +57,7 @@ nome = 'Geek University'
 """
 [::-1] -> Comece do primeiro elemento, vá até o último elemento e inverta.
 """
-print(nome[::-1])  # Inversão da String Pythônico
+print(nome[::-1])  # Inversão da String Pythônica
 
 print(nome.replace('e', 'i'))
 

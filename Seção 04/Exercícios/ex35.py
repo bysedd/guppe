@@ -1,4 +1,4 @@
-from math import sqrt, pow
+from math import pow, sqrt
 
 print('--- Catetos de um triângulo ---')
 

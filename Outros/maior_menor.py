@@ -13,10 +13,9 @@ try:
     for _ in range(n - 1):
         v = float(input('Digite outro valor: '))
         valores.append(v)
-    cddp = casas_decimais(valores)  # Casas decimais depois do ponto
     print(f'\nValores digitados: {len(valores)}')
     print(f'Maior valor: {max(valores)}')
     print(f'Menor valor: {min(valores)}')
-    print(f'Soma de todos os valores: {sum(valores):.{cddp}f}')
+    print(f'Soma de todos os valores: {sum(valores):.{casas_decimais(valores)}f}')
 except ValueError:
     print('\033[1:31mValor inválido!\033[m')

@@ -30,10 +30,8 @@ print(numero, type(numero))
 numero = 'Geek'
 print(numero, type(numero))
 
-
 nao_existe = 'Oi'
 print(nao_existe)
-
 
 numero = 42
 # novo = 0

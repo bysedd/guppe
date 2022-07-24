@@ -52,10 +52,12 @@ print(lista1)
 # lista1.append(12, 34, 56)  # Erro
 lista1.append([8, 3, 1])  # Coloca a lista como elemento único (sublista)
 print(lista1)
+
 if [8, 3, 1] in lista1:
     print('Encontrei a lista')
 else:
     print('Não encontrei a lista')
+
 lista1.extend([123, 44, 67])  # Coloca cada elemento da lista como valor adicional á lista
 print(lista1)
 
@@ -70,11 +72,13 @@ lista1 += lista2
 print(lista1)
 
 # Podemos facilmente inverter uma lista
+
 # Forma 1
 lista1.reverse()
 lista2.reverse()
 print(lista1)
 print(lista2)
+
 # Forma 2
 print(lista1[::-1])
 print(lista2[::-1])
@@ -106,16 +110,19 @@ print(lista5)
 # Podemos facilmente repetir elementos em uma lista
 nova = [1, 2, 3]
 print(nova)
+
 nova *= 3
 print(nova)
 
 # Podemos facilmente converter uma string para uma lista
+
 # Exemplo 1
 curso = 'Programação em Python: Essencial'
 print(curso)
 curso = curso.split()
 print(curso)
 # OBS: Por padrão, o split separa os elementos da lista pelo espaço entre elas.
+
 # Exemplo 2
 curso = 'Programação,em,Python:,Essencial'
 print(curso)
@@ -125,9 +132,11 @@ print(curso)
 # Convertendo uma lista em uma string
 lista6 = ['Programação', 'em', 'Python:', 'Essencial']
 print(lista6)
+
 # Abaixo estamos falando: Pega a lista6, coloca espaços entre cada elemento e transforma em uma string
 curso = ' '.join(lista6)
 print(curso)
+
 # Abaixo estamos falando: Pega a lista6, coloca o cifrão entre cada elemento e transforma em uma string
 curso = '$'.join(lista6)
 print(curso)
@@ -139,6 +148,7 @@ print(type(lista6))
 
 # Iterando sobre listas
 lista1 = [1, 99, 4, 27, 15, 22, 3, 1, 44, 42, 27]
+
 # Exemplo 1 - Utilizando for
 soma = 0
 p = ''
@@ -147,19 +157,25 @@ for elemento in lista1:
     soma += elemento
 print(f'Lista1: \033[3:34m{p[:len(p) - 2]}\033[m')
 print(f'Soma dos elementos da Lista1 = \033[0:32m{soma}\033[m')
+
 # Exemplo 2 - Utilizando while
 carrinho = []
 produto = ''
 p = ''
+
 while True:
     produto = input("Adicione um produto na lista ou digite 'sair' para sair: ")
+
     if produto.lower()[:4] == 'sair':
         break
     else:
         carrinho.append(produto)
+
 print(f'\nCarrinho:', end=' ')
+
 for produto in carrinho:
     p += f'{produto}, '
+
 print(p[:len(p) - 2])
 print(f'Itens no carrinho: {len(carrinho)}')
 
@@ -193,7 +209,9 @@ print(cores[-4])
 
 for cor in cores:
     print(cor)
+
 indice = 0
+
 while indice < len(cores):
     print(cores[indice])
     indice += 1
@@ -201,6 +219,7 @@ while indice < len(cores):
 # Gerar índice em um for
 for indice, cor in enumerate(cores):
     print(indice, cor)
+
 cores = list(enumerate(cores))
 print(cores)
 
@@ -300,8 +319,8 @@ nova.append(4)
 print(lista)
 print(nova)
 # Veja que ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista, mas elas
-# ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra. Isso em Python
-# é chamado de Deep Copy (cópia profunda).
+# ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra.
+# Isso em Python é chamado de Deep Copy (cópia profunda).
 
 # Forma 2 - Shallow Copy
 lista = [1, 2, 3]

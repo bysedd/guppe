@@ -20,7 +20,7 @@ if (n1 < 0.0 or n1 > 10.0) or (n2 < 0.0 or n2 > 10.0) or (n3 < 0.0 or n3 > 10.0)
     else:
         print(f'\033[0:32mNote 3: {n3}\033[m')
 else:
-    avg = (2*n1 + 3*n2 + 5*n3) / 10.0
+    avg = (2 * n1 + 3 * n2 + 5 * n3) / 10.0
     if 0.0 <= avg <= 2.9:
         print(f'Average \033[1:34m{avg:.1f}\033[m --> \033[1:31mDisapproved\033[m')
     elif 3 <= avg <= 4.9:

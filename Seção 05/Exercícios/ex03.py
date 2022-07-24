@@ -1,4 +1,4 @@
-from math import sqrt, pow
+from math import pow, sqrt
 
 num = float(input('Enter a real number: '))
 dec = str(num).split('.')[1].__len__()

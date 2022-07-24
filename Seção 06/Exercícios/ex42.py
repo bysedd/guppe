@@ -1,4 +1,4 @@
-from math import sqrt, pow
+from math import pow, sqrt
 
 while True:
     n = int(input('Digite um valor: '))

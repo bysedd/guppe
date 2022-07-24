@@ -22,6 +22,5 @@ if ativo:
 else:
     print('Você precisa ativar sua conta. Por favor, cheque seu e-mail')
 
-
 # ativo é True?
 print(ativo is True)

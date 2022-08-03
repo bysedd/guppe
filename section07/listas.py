@@ -227,7 +227,7 @@ print(cores)
 lista = [42, 42, 33, 33, 42]
 print(lista)
 
-# Outros métodos não tão importantes mas também úteis
+# others métodos não tão importantes mas também úteis
 
 # Encontrar o índice de um elemento na lista
 numeros = [5, 6, 7, 5, 8, 9, 10]

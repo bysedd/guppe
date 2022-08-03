@@ -57,6 +57,9 @@ OBS: Veja que para definir uma função utilizamos a palavra reservada 'def' inf
 
 
 def diz_oi():
+    """
+    Função que diz 'Oi!'
+    """
     print('Oi!')
 
 
@@ -92,6 +95,9 @@ diz_oi()
 
 
 def cantar_parabens():
+    """
+    Função que canta parabéns
+    """
     print('''Parabéns pra você
 Nesta data querida
 Muitas felicidades

@@ -7,7 +7,7 @@ if nota > 10.0 or nota < 0.0:
     if falta < 0:
         print('Falta\033[0:31m precisa ser >= 0\033[m')
 elif falta < 0:
-    print('Falta\033[0:31m precisa ser maior ou igual a 0\033[m')
+    print('Falta\033[0:31m precisa ser menor ou igual a 0\033[m')
     if nota > 10.0 or nota < 0.0:
         print('\033[0:31mNota inválida')
 else:

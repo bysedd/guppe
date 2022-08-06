@@ -11,5 +11,5 @@ while True:
         print('\033[0:31mErrado..\033[m Digite um número\033[1:31m menor\033[m')
         c += 1
     elif n < x:
-        print('\033[0:31mErrado..\033[m Digite um número\033[1:32m maior\033[m')
+        print('\033[0:31mErrado..\033[m Digite um número\033[1:32m menor\033[m')
         c += 1

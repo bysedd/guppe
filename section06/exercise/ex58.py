@@ -19,4 +19,4 @@ if a > 0 and b > 0:
         num += 1
     print(f'\033[3:34m{p[:len(p) - 3]}\033[m = \033[1:32m{soma}\033[m')
 else:
-    raise ValueError('\033[1:31mO número precisa ser maior do que 0\033[m')
+    raise ValueError('\033[1:31mO número precisa ser menor do que 0\033[m')

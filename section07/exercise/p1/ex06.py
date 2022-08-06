@@ -1,7 +1,4 @@
-vetor = list()
-
-for _ in range(10):
-    vetor.append(int(input('Digite um número inteiro: ')))
+vetor = [int(input('Digite um número inteiro: ')) for _ in range(10)]
 
 print(f'\n{vetor}\n'
       f'Maior elemento: {max(vetor)}\n'

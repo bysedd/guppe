@@ -1,6 +1,6 @@
 op = int(input("""Escolha a opção:
 \033[0:32m1- Soma de 2 números.\033[m
-\033[0:33m2- Diferença entre 2 números (maior pelo menor).\033[m
+\033[0:33m2- Diferença entre 2 números (menor pelo menor).\033[m
 \033[0:35m3- Produto entre 2 números.\033[m
 \033[0:36m4- Divisão entre 2 números (o denominador não pode ser zero).\033[m
 Opção: """))

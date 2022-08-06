@@ -15,6 +15,7 @@ Se pensarmos em uma função, já sabemos que temos funções que:
 - possuem entrada e saída.
 '''
 
+
 def quadrado(numero: int):
     """
     Função que retorna o x²
@@ -43,6 +44,7 @@ def cantar_parabens(aniversariante: str):
 
 
 cantar_parabens('Felippe')
+
 
 # Funções podem ter 'n' parâmetros de entrada. Ou seja, podemos receber como entrada
 # em uma função quantos parâmetros forem necessários. Eles são separados por vírgula.
@@ -90,6 +92,7 @@ print(multiplica(2, 8), end='\n\n')
 print(outra(3, 2, 'Geek '))
 print(outra(5, 4, 'Python '))
 
+
 # OBS: se informarmos um número errado de parâmetro ou argumentos, teremos TypeError
 
 
@@ -119,7 +122,7 @@ print(nome_completo('Felippe', 'Andrade'))
 # Caso utilizemos nomes dos parâmetros nos argumentos para informá-los, podemos
 # utilizar qualquer ordem.
 
-print(nome_completo(nome='Angelina   ',  sobrenome='Jolie'))
+print(nome_completo(nome='Angelina   ', sobrenome='Jolie'))
 
 from typing import Collection
 

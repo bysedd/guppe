@@ -2,16 +2,17 @@
 Listas (list)
 
 Listas em Python funcionam como vetores/matrizes (arrays) em outras linguagens, com a diferença
-de ser DINÂMICO e também de podermos colocar QUALQUER tipo de dado.
+de ser DINÂMICO e também de podermos colocar QUALQUER categoria de dado.
 
 C#: Arrays
-    - Possuem tamanho e tipo de dado fixo;
+    — Possuem tamanho e categoria de dado fixo;
     Ou seja, nestas linguagens se você criar um array do tipo int e com tamanho 5, este array
     será SEMPRE do tipo inteiro e poderá ter SEMPRE NO MÁXIMO 5 valores.
 
 Já em Python:
-- Dinâmico: Não possuem tamanho fixo; Ou seja, podemos criar a lista e simplesmente ir adicionando elementos;
-- Qualquer tipo de dado: Não possuem tipo de dado fixo; Ou seja, podemos colocar qualquer tipo de dado;
+    - Dinâmico: Não possuem tamanho fixo; Ou seja, podemos criar a lista e simplesmente ir adicionando elementos;
+    — Qualquer categoria de dado: Não possuem categoria de dado fixo;
+     Ou seja, podemos colocar qualquer categoria de dado;
 
 As listas em Python são representadas por colchetes: []
 
@@ -62,7 +63,7 @@ lista1.extend([123, 44, 67])  # Coloca cada elemento da lista como valor adicion
 print(lista1)
 
 # Podemos inserir um novo elemento na lista informando a posição do índice
-# OBS: Isso não substitui o valor inicial. O mesmo será deslocado para a direita da lista
+# OBS: isso não substitui o valor inicial. O mesmo será deslocado para a direita da lista
 lista1.insert(2, 'Novo valor')
 print(lista1)
 
@@ -87,18 +88,18 @@ print(lista2[::-1])
 lista6 = lista2.copy()
 print(lista6)
 
-# Podemos contar quantos elementos existem dentro da lista
+# Podemos contar quantos elementos existem na lista
 print(len(lista5))
 
 # Podemos remover facilmente o último elemento de uma lista
-# OBS: O pop não somente remove o último elemento mas também o retorna
+# OBS: O ‘pop’ não somente remove o último elemento mas também o retorna
 print(lista5)
 lista5.pop()
 print(lista5)
 
 # Podemos remover um elemento pelo índice
-# OBS: Os elementos á direita deste índice serão deslocados para a esquerda.
-# OBS: Se não houver elemento no índice informado, teremos o erro IndexError.
+# OBS: os elementos á direita deste índice serão deslocados para a esquerda.
+# OBS: se não houver elemento no índice informado, teremos o erro IndexError.
 lista5.pop(2)
 print(lista5)
 
@@ -141,7 +142,7 @@ print(curso)
 curso = '$'.join(lista6)
 print(curso)
 
-# Podemos realmente qualquer tipo de dado em uma lista, inclusive misturando esses dados
+# Podemos realmente qualquer categoria de dado em uma lista, inclusive misturando esses dados
 lista6 = [1, 2.34, True, 'Geek', 'd', [False, 2.35, 3j], 948723904216246397]
 print(lista6)
 print(type(lista6))
@@ -246,14 +247,14 @@ print(numeros.index(9))
 # OBS: Retorna o índice do primeiro elemento encontrado
 print(numeros.index(5))
 
-# Podemos fazer busca dentro de um range, ou seja, qual índice começar a buscar
+# Podemos fazer busca em um range, ou seja, qual índice começar a buscar
 print(numeros.index(5, 1))  # buscando a partir do índice 1
 print(numeros.index(5, 2))  # buscando a partir do índice 2
 print(numeros.index(5, 3))  # buscando a partir do índice 3
 # print(numeros.index(5, 4))  # buscando a partir do índice 4
 # print(numeros.index(5, 4))  # Gera: ValueError: 5 is not in list
 
-# Podemos fazer busca dentro de um range, início/fim
+# Podemos fazer busca em um range, início/fim
 print(numeros.index(8, 3, 6))  # buscar o índice do valor 8 entre os índices 6 a 8
 
 # Revisão de slice
@@ -266,13 +267,13 @@ lista = [1, 2, 3, 4, 5]
 print(lista[1:])  # Iniciando no índice 1 e pegando todos os elementos restantes
 
 # Trabalhando com slice de listas com o parâmetro 'fim'
-print(lista[:2])  # Começa em 0, pega até o índice 2 - 1
-print(lista[:4])  # Começa em 0, pega até o índice 4 - 1
-print(lista[1:3])  # Começa em 1, pega até o índice 3 - 1
+print(lista[:2])  # Começa em 0, pega até o índice 2 – 1
+print(lista[:4])  # Começa em 0, pega até o índice 4 – 1
+print(lista[1:3])  # Começa em 1, pega até o índice 3 – 1
 
 # Trabalhando com slice de listas com o parâmetro 'passo'
-print(lista[1::2])  # Começa em 1, vai até o final, de 2 em 2
-print(lista[::2])  # Começa do 0, vai até o final, de 2 em 2
+print(lista[1::2])  # Começa em 1, vai até o final, a cada 2
+print(lista[::2])  # Começa do 0, vai até o final, a cada 2
 
 # Invertendo valores em uma lista
 
@@ -318,9 +319,9 @@ print(nova)
 nova.append(4)
 print(lista)
 print(nova)
-# Veja que ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista, mas elas
-# ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra.
-# Isso em Python é chamado de Deep Copy (cópia profunda).
+# Veja que ao utilizarmos lista.copy() copiamos os dados da lista para uma nova, mas elas
+# ficaram totalmente independentes, ou seja, modificando uma, não afeta a outra.
+# Isso em Python é chamado Deep Copy (cópia profunda).
 
 # Forma 2 - Shallow Copy
 lista = [1, 2, 3]
@@ -332,4 +333,4 @@ print(lista)
 print(nova)
 # Veja que utilizamos a cópia via atribuição e copiamos os dados da lista para a nova lista, mas
 # após realizar modificação em uma das listas, essa modificação se refletiu em ambas as listas.
-# Isso em Python é chamado de Shallow Copy.
+# Isso em Python é chamado Shallow Copy.

@@ -19,6 +19,7 @@ ret_pr = print(numeros)
 
 print(f'Retorno de print: {ret_pr}')
 
+
 # Vamos refatorar está função para que ela retorne o valor
 
 
@@ -34,4 +35,3 @@ ret = quadrado_de_7()
 print(f'Retorno {ret}')
 
 print(f'Retorno {quadrado_de_7() + 1}')
-

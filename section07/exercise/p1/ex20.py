@@ -1,8 +1,5 @@
-num = list()
+num = [int(input('Digite um inteiro: ')) for _ in range(10)]
 impar = list()
-
-for _ in range(10):
-    num.append(int(input('Digite um inteiro entre [0,50]: ')))
 
 for elemento in num:
     if elemento % 2 != 0:

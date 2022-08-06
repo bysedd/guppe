@@ -23,4 +23,4 @@ if a > 0 and b > 0:
     else:
         print(f'Entre \033[3:34m{a} e {b}\033[m existem \033[1:33m{conta} números primos\033[m')
 else:
-    raise ValueError('\033[1:31mO número precisa ser maior do que 0\033[m')
+    raise ValueError('\033[1:31mO número precisa ser menor do que 0\033[m')

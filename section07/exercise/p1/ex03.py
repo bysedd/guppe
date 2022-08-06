@@ -1,17 +1,11 @@
 from math import sqrt
 
-c1 = set()
-c2 = set()
 p = '{'
+c1 = {float(input('Digite um número real: ')) for _ in range(10)}
+c2 = {sqrt(elemento) for elemento in c1}
 
-for _ in range(10):
-    c1.add(float(input('Digite um número real: ')))
-
-for elemento in c1:
-    c2.add(sqrt(elemento))
-
-print(f'\n{c1}')
-print('Raiz quadrada dos números digitados acima, aproximadamente')
+print(f'\n{c1:.1f}')
+print('Raiz quadrada dos números digitados acima, aproximadamente:')
 
 for elemento in c2:
     p += f'{elemento:.1f}, '

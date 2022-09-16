@@ -1,6 +1,6 @@
 try:
-    n1 = input()
-    n2 = input()
+    n1 = input('Digite um número: ')
+    n2 = input('Digite outro número: ')
     p = f'\033[1:32m{n1}/{n2}\033[m'
     cont = []
 
@@ -22,7 +22,7 @@ try:
 
         print(f'\nÉ possível simplificar essa fração/divisão por {d}\n{p} = '
               f'\033[1:36m{n1}/{n2}\033[m ou '
-              f'\033[1:36m{(r * 100):.2f}%\033[m ou '
+              f'\033[1:36m{round(r * 100, 2)}%\033[m ou '
               f'\033[1:36m{r:.4f}\033[m')
     else:
         print(f'\033[1:31mDigite apenas números!\033[m')

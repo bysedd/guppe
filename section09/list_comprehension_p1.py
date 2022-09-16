@@ -44,8 +44,6 @@ print(numeros_dobrados)
 # List Comprehension
 print([numero * 2 for numero in [1, 2, 3, 4, 5]])
 
-"""
-
 # Outros exemplos
 
 # 1
@@ -64,3 +62,24 @@ print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
 
 # 5
 print([str(numero) for numero in range(1, 6)])
+
+"""
+
+# Comparando
+x = 10
+
+# 1
+i = 0
+while i <= x:
+    print(i, end=' - ')
+    i += 1
+print('FIM!')
+
+# 2
+for i in range(x + 1):
+    print(i, end=' - ')
+print('FIM!')
+
+# 3
+[print(i, end=' - ') for i in range(x + 1)]
+print('FIM!')

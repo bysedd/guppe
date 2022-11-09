@@ -1,27 +1,26 @@
-'''
+"""
 Funções com Parâmetro (de entrada)
 
-- Funções que recebem dados para serem processados dentro da mesma;
+- Funções que recebem dados para serem processados na mesma;
 
-Se persarmos em um programa qualquer, geralmente temos:
+Se pensarmos em um programa qualquer, geralmente temos:
 
 entrada -> processamento -> saída
 
 Se pensarmos em uma função, já sabemos que temos funções que:
 - não possuem entrada;
 - não possuem saída;
-- possuem entrada mas não possuem saída;
-- não possuem entrada mas possuem saída;
+- possuem entrada, mas não possuem saída;
+- não possuem entrada, mas possuem saída;
 - possuem entrada e saída.
-'''
 
 
 def quadrado(numero: int):
-    """
+
     Função que retorna o x²
     :param numero: Número que será elevado ao quadrado
     :return: numero ** 2
-    """
+
     return numero ** 2
 
 
@@ -31,11 +30,11 @@ print(quadrado(5))
 
 
 def cantar_parabens(aniversariante: str):
-    """
+
     Função que canta parabéns
     :param aniversariante: Nome do aniversariante
     :return: None
-    """
+
     print('Parabéns pra você')
     print('Nesta data querida')
     print('Muitas felicidades')
@@ -53,33 +52,33 @@ cantar_parabens('Felippe')
 
 
 def soma(a: float, b: float):
-    """
+
     Função que soma dois números
     :param a: Primeiro número
     :param b: Segundo número
-    :return: a + b    
-    """
+    :return: a + b
+
     return a + b
 
 
 def multiplica(num1: float, num2: float):
-    """
+
     Função que multiplica dois números
     :param num1: Primeiro número
     :param num2: Segundo número
     :return: num1 * num2
-    """
+
     return num1 * num2
 
 
 def outra(num1: float, b: float, msg: str):
-    """
+
     Função que repete uma mensagem
     :param num1: Número que será acrescentado a soma
     :param b: Número que será somado
     :param msg: Mensagem que será repetida
     :return: (num1 + b) * msg
-    """
+
     return (num1 + b) * msg
 
 
@@ -97,12 +96,12 @@ print(outra(5, 4, 'Python '))
 
 
 def nome_completo(nome: str, sobrenome: str):
-    """
+
     Função que exibe o nome completo
     :param nome: Nome
     :param sobrenome: Sobrenome
     :return: Nome completo.
-    """
+
     nome = nome.strip()
     sobrenome = sobrenome.strip()
     return f'Seu nome completo é {nome} {sobrenome}'
@@ -123,6 +122,7 @@ print(nome_completo('Felippe', 'Andrade'))
 # utilizar qualquer ordem.
 
 print(nome_completo(nome='Angelina   ', sobrenome='Jolie'))
+"""
 
 from typing import Collection
 
@@ -140,6 +140,8 @@ def soma_impares(numeros: Collection):
     return total
 
 
-print(soma_impares([1, 2, 3, 4, 5, 6, 7]))
-print(soma_impares((8, 9, 10, 11, 12, 13, 14)))
-print(soma_impares(3))
+if __name__ == "__main__":
+    lista = [1, 2, 3, 4, 5, 6, 7]
+    tupla = (8, 9, 10, 11, 12, 13, 14)
+    print(soma_impares(lista))
+    print(soma_impares(tupla))

@@ -24,7 +24,6 @@ arquivo.write("Outro texto.\n")
 arquivo.seek(0)
 print(arquivo.read())
 arquivo.close()
-
 """
 
 from io import StringIO

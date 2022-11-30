@@ -1,0 +1,9 @@
+nome: João|nota: 8
+nome: Júlia|nota: 10
+nome: Pedro Gabriel|nota: 6
+nome: carol|nota: 3
+nome: ayslan|nota: 5
+nome: davy|nota: 7
+nome: maria eduarda|nota: 8
+nome: poliana|nota: 9
+nome: felippe andrade de menezes|nota: 10

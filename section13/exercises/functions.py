@@ -34,3 +34,31 @@ def float_to_bin(decimal: float = 7):
         if "0b" in binario:
             binario = binario.replace("0b", "")
     return binario
+
+
+def error_message(mensagem: (str, TypeError), br=False):
+    """
+    Formata uma mensagem de erro
+    :param mensagem: Mensagem
+    :param br: Quebrar linha
+    :return: Mensagem formatada
+    """
+    from colorama import Fore, Style
+    break_line = "\n"
+    string = f"{Fore.RED}{mensagem}{Style.RESET_ALL}"
+    return string + break_line if br else string
+
+
+def print_formatado(mensagem: str, detalhe: str = "-=", qtd: int = 40, preencher: str = " "):
+    """
+    Print customizado
+    :param mensagem: Mensagem
+    :param detalhe: Detalhe para colocar em cima e em baixo da mensagem
+    :param qtd: Quantidade de detalhes (tamanho)
+    :param preencher: Preencher o espaço deixado em branco pela mensagem
+    :return: None
+    """
+    len_d = len(detalhe)
+    print(f"{detalhe * qtd}\n" \
+          f"{mensagem:{preencher}^{len_d * qtd}}\n" \
+          f"{detalhe * qtd}")

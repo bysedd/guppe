@@ -49,16 +49,27 @@ def error_message(mensagem: (str, TypeError), br=False):
     return string + break_line if br else string
 
 
-def print_formatado(mensagem: str, detalhe: str = "-=", qtd: int = 40, preencher: str = " "):
+def print_formatado(mensagem: str, detalhe: str = "-=", qtd: int = 40):
     """
-    Print customizado
+    Impressão customizada
     :param mensagem: Mensagem
     :param detalhe: Detalhe para colocar em cima e em baixo da mensagem
     :param qtd: Quantidade de detalhes (tamanho)
-    :param preencher: Preencher o espaço deixado em branco pela mensagem
     :return: None
     """
     len_d = len(detalhe)
-    print(f"{detalhe * qtd}\n" \
-          f"{mensagem:{preencher}^{len_d * qtd}}\n" \
+    print(f"{detalhe * qtd}\n"
+          f"{mensagem.center(len_d * qtd)}\n"
           f"{detalhe * qtd}")
+
+
+def confirm(message):
+    """
+    Fica a perguntar até escolher entre 'sim' ou 'não'.
+    :param message: Mensagem
+    :return: Retorna True se você responder 'sim' ou False se responder 'não'
+    """
+    sair = input(message).strip().lower()
+    while sair not in ("y", "n"):
+        sair = input(message).strip().lower()
+    return True if sair == "y" else False

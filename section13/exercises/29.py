@@ -1,9 +1,10 @@
 from functions import error_message, print_formatado, confirm
+from collections import OrderedDict
 
 
 class Registros:
     def __init__(self):
-        self.arquivo = {}
+        self.arquivo = OrderedDict()
         self.nome_arquivo = 'registros.csv'
         self.encoding = 'utf-8'
         self.moeda = 'R$'
@@ -29,7 +30,7 @@ class Registros:
                 self.arquivo[int(codigo)] = {
                     'nome': nome.strip().title(),
                     'vendas': round(float(vendas), 2),
-                    'mes': mes.strip().lower()
+                    'mes': int(mes)
                 }
 
     def criar_arquivo(self):
@@ -42,8 +43,6 @@ class Registros:
             print(error_message('O arquivo já existe'))
 
     def adicionar_registro(self, d: dict = None):
-        import calendar
-
         if not d:
             continuar = True
             while continuar:
@@ -67,7 +66,7 @@ class Registros:
                     self.arquivo[codigo_vendedor] = {
                         'nome': nome_vendedor,
                         'vendas': valor_da_venda,
-                        'mes': calendar.month_name[mes]
+                        'mes': mes
                     }
                 except ValueError as err:
                     print(error_message(err))
@@ -90,12 +89,14 @@ class Registros:
             nome_vendedor = input('Digite o nome do vendedor: ').strip().title()
             for k, v in arquivo.items():
                 if v['nome'] == nome_vendedor:
-                    del(self.arquivo[k])
+                    self.arquivo.pop(k)
                     find = True
             if not find:
                 print(error_message('Nome do vendedor não encontrado'))
             continuar = confirm('Quer continuar (y/n)? ')
-        self.adicionar_registro(self.arquivo)
+
+        if arquivo:
+            self.adicionar_registro(self.arquivo)
 
     def alterar_vendas(self):
         """Alterar o valor de uma venda no arquivo"""
@@ -130,10 +131,14 @@ class Registros:
             os.remove(self.nome_arquivo)
 
     def imprimir_registros(self):
+        import calendar
+
         self.ler_arquivo()
+        arquivo_ordenado = sorted(self.arquivo.items(), key=lambda item: item[1]['mes'])
+
         print_formatado('Registros')
-        for k, v in self.arquivo.items():
-            print(f"{k} | {v['nome']} | {v['vendas']} | {v['mes']}".center(80))
+        for k, v in arquivo_ordenado:
+            print(f"{k} | {v['nome']} | {v['vendas']} | {calendar.month_name[v['mes']].lower()}".center(80))
 
 
 registros = Registros()

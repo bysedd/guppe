@@ -36,8 +36,6 @@ print(getsizeof(92345668823))
 print(getsizeof(True))
 print(getsizeof(False))
 
-from sys import getsizeof
-
 # Gerando uma lista de números com List Comprehension
 list_comp = getsizeof([x * 10 for x in range(1000)])
 

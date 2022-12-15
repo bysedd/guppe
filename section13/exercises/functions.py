@@ -72,4 +72,4 @@ def confirm(message):
     sair = input(message).strip().lower()
     while sair not in ("y", "n"):
         sair = input(message).strip().lower()
-    return True if sair == "y" else False
+    return sair == "y"

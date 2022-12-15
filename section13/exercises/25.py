@@ -85,7 +85,7 @@ class Agenda:
                 if count == 1:
                     remover = confirm("Deseja remover este contato (y/n)? ")
                     if remover:
-                        for k, v in contatos.items():
+                        for k, v in contatos.copy().items():
                             if k == n:
                                 del(contatos[k])
                                 break

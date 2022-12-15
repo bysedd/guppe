@@ -6,7 +6,7 @@ Set => {1, 2, 3, 4, 5}
 """
 
 # Exemplo
-numeros = {num for num in range(1, 7)}
+numeros = set(range(1, 7))
 print(numeros)
 
 # Outro exemplo
@@ -18,5 +18,5 @@ numeros = {x: x ** 2 for x in range(10)}
 [print(f'{k}² = {v}') for k, v in numeros.items()]
 
 # Pra finalizar
-letras = {letra for letra in 'Felippe'}
+letras = set('Felippe')
 print(''.join(letras))

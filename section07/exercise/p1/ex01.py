@@ -14,4 +14,4 @@ print(a[0] + a[1] + a[5])
 a[4] = 100
 
 # (d)
-print([valor for valor in a])
+print(list(a))

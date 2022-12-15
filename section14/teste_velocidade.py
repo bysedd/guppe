@@ -38,7 +38,7 @@ gen_tempo = time.time() - gen_inicio
 
 # List Comprehension
 list_inicio = time.time()
-print(sum([num for num in range(qtd)]))
+print(sum(list(range(qtd))))
 list_tempo = time.time() - list_inicio
 
 print('Generator Expression levou {} segundos'.format(round(gen_tempo, 1)))

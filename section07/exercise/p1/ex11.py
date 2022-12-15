@@ -1,5 +1,5 @@
-pos = list()
-neg = list()
+pos = []
+neg = []
 
 for _ in range(10):
     while True:

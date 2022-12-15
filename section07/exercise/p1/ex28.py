@@ -1,10 +1,10 @@
-v = list()
+v = []
 
 for _ in range(10):
     v.append(int(input('Digite um inteiro: ')))
 
-v1 = list()
-v2 = list()
+v1 = []
+v2 = []
 
 for elemento in v:
     if elemento % 2 == 0:

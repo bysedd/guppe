@@ -1,5 +1,5 @@
 num = [int(input('Digite um inteiro: ')) for _ in range(10)]
-impar = list()
+impar = []
 
 for elemento in num:
     if elemento % 2 != 0:

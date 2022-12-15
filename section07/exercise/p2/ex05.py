@@ -1,5 +1,4 @@
 def matriz(mat: list):
-    global x
     pos = False
     for i in range(len(mat)):
         for j in range(len(mat)):

@@ -1,6 +1,6 @@
-a = list()
-b = list()
-c = list()
+a = []
+b = []
+c = []
 
 for _ in range(10):
     a.append(int(input('Digite um inteiro A: ')))

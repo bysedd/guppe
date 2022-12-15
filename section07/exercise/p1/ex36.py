@@ -1,4 +1,4 @@
-v = list()
+v = []
 
 for _ in range(10):
     v.append(float(input('Digite um número real: ')))

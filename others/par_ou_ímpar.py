@@ -1,7 +1,7 @@
 from random import randint
 
 n = int(input('Número de jogadores: '))
-jogadas = list()
+jogadas = []
 
 print()
 for i in range(n):

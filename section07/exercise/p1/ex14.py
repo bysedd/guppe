@@ -1,8 +1,8 @@
 from collections import defaultdict
 
-vetor = list()
+vetor = []
 d = defaultdict(int)
-lista = list()
+lista = []
 
 for _ in range(10):
     vetor.append(input('Digite qualquer coisa: '))

@@ -1,5 +1,5 @@
-lista = list()
-vetor = list()
+lista = []
+vetor = []
 
 for _ in range(10):
     lista.append(int(input('Digite um inteiro: ')))

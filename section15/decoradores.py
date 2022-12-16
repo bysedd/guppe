@@ -48,7 +48,7 @@ def seja_educado_mesmo(funcao):
     def sendo_educado_mesmo():
         print('Foi um prazer conhecer você.')
         funcao()
-        print('Tenha um exelente dia.')
+        print('Tenha um excelente dia.')
     return sendo_educado_mesmo
 
 

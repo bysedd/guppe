@@ -10,7 +10,7 @@ nos nossos programas.
 
 OBS: na sessão de funções, nós utilizamos isso.
 
-Em Pytho, as funções são Cidadãos de Primeira Classe (First Class Citizen)
+Em Python, as funções são Cidadãos de Primeira Classe (First Class Citizen)
 
 # Exemplo - Definindo as funções
 
@@ -79,7 +79,7 @@ print(rindo())
 """
 from random import choice
 
-# Inner Funtions (Funções Internas / Nested Functions) podem acessar o escopo de funções mais externas.
+# Inner Functions (Funções Internas / Nested Functions) podem acessar o escopo de funções mais externas.
 
 
 def faz_me_rir_novamente(pessoa):

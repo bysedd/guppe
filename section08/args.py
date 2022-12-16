@@ -1,7 +1,8 @@
 """
 Entendendo o *args
 
-— O *args é um parâmetro, como outro qualquer. Isso significa que você poderá chamar de qualquer coisa, desde que comece com asterisco
+— O *args é um parâmetro, como outro qualquer. Isso significa que você poderá chamar de qualquer coisa,
+desde que comece com asterisco
 
 Exemplo:
 
@@ -11,7 +12,8 @@ Mas por convenção, utilizamos *args para defini-lo
 
 Mas o que é o *args?
 
-O parâmetro *args utilizado em uma função, coloca os valores extras informados como entrada em uma tupla. Então desde já lembre-se que tuplas são imutáveis
+O parâmetro *args utilizado em uma função, coloca os valores extras informados como entrada em uma tupla. Desde já se
+lembre que tuplas são imutáveis
 
 # Exemplos
 

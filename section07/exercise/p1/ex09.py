@@ -1,4 +1,4 @@
-vetor = list()
+vetor = []
 
 for _ in range(6):
     while True:

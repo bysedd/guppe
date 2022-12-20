@@ -1,4 +1,4 @@
-lista = list()
+lista = []
 
 while True:
     lista.append(int(input()))
@@ -7,7 +7,7 @@ while True:
         break
 
 p = ''
-qtd = list()
+qtd = []
 s = 0
 print('\nNúmeros pares digitados: [', end='')
 for elemento in lista:
@@ -20,7 +20,7 @@ print(f'Quantidade de números pares digitados: {len(qtd)}')
 print(f'Soma dos números pares digitados: {s}')
 
 p = ''
-qtd = list()
+qtd = []
 s = 0
 print('\nNúmeros ímpares digitados: [', end='')
 for elemento in lista:

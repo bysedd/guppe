@@ -20,7 +20,7 @@ elif codigo == 2:
 elif codigo == 3:
     total_categoria[3] += consumo
 else:
-    while codigo != 1 and codigo != 2 and codigo != 3:
+    while codigo not in (1, 2, 3):
         print(f'\033[1:31mCódigo inválido\033[m')
         codigo = int(input('1-Residencial; 2-Comercial; 3-Industrial\nCódigo do consumidor: '))
         if codigo == 1:
@@ -43,7 +43,7 @@ for _ in range(2, n + 1):
     elif codigo == 3:
         total_categoria[3] += consumo
     else:
-        while codigo != 1 and codigo != 2 and codigo != 3:
+        while codigo not in (1, 2, 3):
             print(f'\033[1:31mCódigo inválido\033[m')
             codigo = int(input('1-Residencial; 2-Comercial; 3-Industrial\nCódigo do consumidor: '))
             if codigo == 1:

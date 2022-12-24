@@ -31,7 +31,7 @@ if num.isnumeric():
     num = int(num)
     if num > 1:
         print()
-        while choose != 'maior' and choose != 'menor' and choose != 'ambos':
+        while choose not in ('maior', 'menor', 'ambos'):
             choose = input('Você quer achar o \033[34m"maior"\033[m divisor, '
                            'o \033[34m"menor"\033[m ou \033[34m"ambos"\033[m? ').lower().strip()[:5]
         print()

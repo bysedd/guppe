@@ -85,7 +85,7 @@ class Agenda:
                 if count == 1:
                     remover = confirm("Deseja remover este contato (y/n)? ")
                     if remover:
-                        for k, v in contatos.items():
+                        for k, v in contatos.copy().items():
                             if k == n:
                                 del(contatos[k])
                                 break
@@ -113,7 +113,7 @@ class Agenda:
         while continuar:
             if not n:
                 n = input("Digite o nome do contato que quer pesquisar: ")
-            if not len(n):
+            if not n:
                 print(error_message("Nome inválido"))
             else:
                 self.pesquisar(nome=n)
@@ -142,7 +142,7 @@ class Agenda:
         while continuar:
             try:
                 le = input("Digite a letra do contato que quer pesquisar: ")[0]
-                if not len(le) or le.isnumeric() or le not in ascii_letters:
+                if not le or le.isnumeric() or le not in ascii_letters:
                     raise TypeError
                 self.pesquisar(letra=le)
             except (TypeError, IndexError):

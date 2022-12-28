@@ -34,7 +34,7 @@ import numpy as np
 # Outros exemplos
 
 # Gerando um tabuleiro/matriz 3x3
-tabuleiro = np.array([[numero for numero in range(1, 4)] for valor in range(1, 4)])
+tabuleiro = np.array([list(range(1, 4)) for valor in range(1, 4)])
 print(tabuleiro)
 
 # Gerando jogadas para o jogo da velha

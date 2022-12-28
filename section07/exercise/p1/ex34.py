@@ -1,4 +1,4 @@
-vetor = list()
+vetor = []
 
 vetor.append(int(input('Digite um inteiro: ')))
 while len(vetor) < 10:

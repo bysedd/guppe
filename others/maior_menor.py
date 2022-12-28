@@ -17,7 +17,7 @@ try:
     n = int(n)
     if n > 0:
         print()
-        valores = list()
+        valores = []
         for i in range(1, n + 1):
             v = float(input(f'Digite o {i}º valor: '))
             valores.append(v)

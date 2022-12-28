@@ -1,4 +1,4 @@
-pares = list()
+pares = []
 c = 0
 
 vetor = [int(input('Digite um número inteiro: ')) for _ in range(10)]

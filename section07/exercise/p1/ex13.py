@@ -1,4 +1,4 @@
-vetor = list()
+vetor = []
 
 for _ in range(5):
     vetor.append(int(input('Digite um número inteiro: ')))

@@ -25,7 +25,7 @@ print(any([0, 1, 2, 3, 4]))  # True
 print(any([0, False, {}, (), '']))  # False
 
 nomes = ['Carlos', 'Camila', 'Carla', 'Casimiro', 'Cristina', 'Felippe']
-print(any([nome.strip()[0].upper() == 'C' for nome in nomes]))  # True
+print(any(nome.strip()[0].upper() == 'C' for nome in nomes))  # True
 
-print(any([num for num in [4, 2, 10, 6, 8, 9] if num % 2 == 0]))  # True
-print(any([num for num in [1, 5, 3, 9, 7, 11] if num % 2 == 0]))  # False
+print(any(num for num in [4, 2, 10, 6, 8, 9] if num % 2 == 0))  # True
+print(any(num for num in [1, 5, 3, 9, 7, 11] if num % 2 == 0))  # False

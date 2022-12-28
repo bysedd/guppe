@@ -1,5 +1,5 @@
-x = list()
-y = list()
+x = []
+y = []
 pe = 0.0
 
 while True:

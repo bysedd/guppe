@@ -75,7 +75,7 @@ class Despensa:
                 c = int(linha.split(",")[0])
                 if c == int(code):
                     break
-            return True if int(code) == c else False, linha
+            return int(code) == c, linha
 
     def ler_arquivo(self):
         produtos = {}

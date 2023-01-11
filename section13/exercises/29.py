@@ -129,6 +129,7 @@ class Registros:
         confirmar = confirm('Você que tem certeza disso (y/n)? ')
         if confirmar:
             os.remove(self.nome_arquivo)
+            print(f"Arquivo '{self.nome_arquivo}' excluído")
 
     def imprimir_registros(self):
         import calendar
@@ -144,23 +145,26 @@ class Registros:
 registros = Registros()
 
 while True:
-    registros.exibir_opcoes()
-    opt = input('Escolha uma opção: ')
-    match opt:
-        case '1':
-            registros.criar_arquivo()
-        case '2':
-            registros.adicionar_registro()
-        case '3':
-            registros.excluir_vendedor()
-        case '4':
-            registros.alterar_vendas()
-        case '5':
-            registros.imprimir_registros()
-        case '6':
-            registros.excluir_arquivo()
-        case '7':
-            print_formatado('Programa finalizado')
-            break
-        case _:
-            print(error_message('Opção inválida'))
+    try:
+        registros.exibir_opcoes()
+        opt = input('Escolha uma opção: ')
+        match opt:
+            case '1':
+                registros.criar_arquivo()
+            case '2':
+                registros.adicionar_registro()
+            case '3':
+                registros.excluir_vendedor()
+            case '4':
+                registros.alterar_vendas()
+            case '5':
+                registros.imprimir_registros()
+            case '6':
+                registros.excluir_arquivo()
+            case '7':
+                print_formatado('Programa finalizado')
+                break
+            case _:
+                print(error_message('Opção inválida'))
+    except FileNotFoundError:
+        print('Arquivo não encontrado, use a opção 1 para criar.')

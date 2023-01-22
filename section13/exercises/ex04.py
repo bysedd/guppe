@@ -7,7 +7,8 @@ with open("arq.txt", encoding="UTF-8") as f:
         if letra in ['a', 'e', 'i', 'o', 'u']:
             vogais += 1
         elif letra in ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n'
-                       'p', 'q', 'r', 't', 's', 'v', 'w', 'x', 'y', 'z']:
+                                                                         'p', 'q', 'r', 't', 's', 'v', 'w', 'x', 'y',
+                       'z']:
             consoantes += 1
 
 print(f"Quantidade de vogais no arquivo: {vogais}")

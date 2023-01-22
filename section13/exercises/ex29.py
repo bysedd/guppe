@@ -1,5 +1,6 @@
-from functions import error_message, print_formatado, confirm
 from collections import OrderedDict
+
+from functions import error_message, print_formatado, confirm
 
 
 class Registros:

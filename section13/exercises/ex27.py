@@ -1,6 +1,7 @@
 # coding=utf-8
-from section13.exercises.functions import print_formatado, error_message
 from colorama import Fore, Style
+
+from section13.exercises.functions import print_formatado, error_message
 
 
 class Turma:

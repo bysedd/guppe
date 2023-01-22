@@ -87,7 +87,7 @@ class Agenda:
                     if remover:
                         for k, v in contatos.copy().items():
                             if k == n:
-                                del(contatos[k])
+                                del (contatos[k])
                                 break
                         self.inserir_contato(contatos)
                         print("Contato removido!")

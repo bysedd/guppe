@@ -1,0 +1,1 @@
+# Path: section17\exercises\p1\ex24.py

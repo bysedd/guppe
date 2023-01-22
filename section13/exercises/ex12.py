@@ -1,5 +1,5 @@
-from string import ascii_lowercase
 from collections import defaultdict
+from string import ascii_lowercase
 
 arquivo = "animals.txt"
 

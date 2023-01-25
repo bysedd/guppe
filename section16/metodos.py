@@ -70,11 +70,11 @@ class Lampada:
         self.__voltagem = voltagem
         self.__luminosidade = luminosidade
         self.__ligada = False
-    
-    
+
+
 class ContaCorrente:
     contador = 4999
-    
+
     def __init__(self, limite: float, saldo: float):
         self.__numero = ContaCorrente.contador + 1
         self.__limite = limite
@@ -84,14 +84,14 @@ class ContaCorrente:
 
 class Produto:
     contador = 0
-    
+
     def __init__(self, nome: str, descricao: str, valor: float):
         self.__id = Produto.contador + 1
         self.__nome = nome
         self.__descricao = descricao
         self.__valor = valor
         Produto.contador = self.__id
-    
+
     def desconto(self, percentual: float):
         """Retorna o valor do produto com o desconto"""
         return self.__valor * (1 - percentual / 100)
@@ -100,18 +100,18 @@ class Produto:
 from passlib.hash import pbkdf2_sha256 as crypt
 
 
-class Usuario:    
+class Usuario:
     contador = 0
-    
-    @classmethod 
+
+    @classmethod
     def conta_usuarios(cls):
         print(f'Classe: {cls}')
         print(f'Temos {cls.contador} usuário(s) no sistema.')
-    
+
     @classmethod
     def teste(cls):
         print('Teste')
-    
+
     @staticmethod
     def definicao():
         """Método estático não recebe nem a classe e nem a instância. É um método utilitário. Pode ser acessado
@@ -131,7 +131,7 @@ class Usuario:
 
     def checa_senha(self, senha) -> bool:
         return True if crypt.verify(senha, self.__senha) else False
-    
+
     def __gera_usuario(self):
         return self.__email.split('@')[0]
 

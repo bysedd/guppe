@@ -38,4 +38,3 @@ from random import (
 print(random())
 print(randint(0, 9))
 print(choice((13, 22)))
-

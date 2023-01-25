@@ -41,6 +41,3 @@ n1 = input("Informe o primeiro número: ")
 n2 = input("Informe o segundo número: ")
 print(f"{n1} / {n2} = {dividir(n1, n2)}")
 """
-
-
-

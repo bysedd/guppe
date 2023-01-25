@@ -12,7 +12,7 @@ while True:
             n = int(input(f'\nEnter the {i + 1}º number: '))
             if n < 0:
                 raise ValueError
-            
+
             ultimo = 1
             penultimo = 1
             fibo = [0, 1]

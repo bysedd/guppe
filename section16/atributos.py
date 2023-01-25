@@ -68,6 +68,7 @@ print(p2.id)
 
 """
 
+
 # Classes com atributos de instância públicos
 
 
@@ -119,6 +120,7 @@ class Acesso:
 p1 = Produto('Playstation 4', 'Video Game', 2300)
 p2 = Produto('Xbox S', 'Video Game', 4500)
 
+
 # Refatorar a classe Produto
 
 
@@ -126,7 +128,7 @@ class Produto:
     # Atributos de classe
     imposto: float = 1.05  # 0.05% de imposto
     contador: int = 0
-    
+
     def __init__(self, nome: str, descricao: str, valor: float):
         self.id: int = Produto.contador + 1
         self.nome: str = nome

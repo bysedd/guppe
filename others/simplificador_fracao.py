@@ -2,7 +2,7 @@ try:
     n1 = input('Digite o numerador: ')
     n2 = input('Digite o denominador: ')
     p = f'\033[1:32m{n1}/{n2}\033[m'
-    
+
     if n1.isnumeric() and n2.isnumeric():
         n1 = int(n1)
         n2 = int(n2)

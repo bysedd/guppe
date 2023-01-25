@@ -61,6 +61,7 @@ print(lol())  # 0 arg.
 print(ordenar(acompanhamento='coca cola sem açúcar', principal='frango assado'))
 """
 
+
 # Decorator com argumentos
 
 
@@ -70,7 +71,9 @@ def verifica_primeiro_argumento(valor):
             if args and args[0] != valor:
                 return f'Valor incorreto! O primeiro argumento precisa ser {valor}'
             return funcao(*args, **kwargs)
+
         return outra
+
     return interna
 
 

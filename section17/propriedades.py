@@ -68,55 +68,55 @@ print(conta1.__dict__)
 
 class Conta:
     contador = 0
-    
+
     def __init__(self, titular: str, saldo: float, limite: float) -> None:
         Conta.contador += 1
         self.__numero = Conta.contador
         self.__titular = titular
         self.__saldo = saldo
         self.__limite = limite
-    
+
     @property
     def numero(self) -> int:
         return self.__numero
-    
+
     @property
     def titular(self) -> str:
         return self.__titular
-    
+
     @titular.setter
     def titular(self, titular: str) -> None:
         print(f'O titular foi alterado de {self.titular} para {titular}')
         self.__titular = titular
-    
+
     @property
     def saldo(self) -> float:
         return self.__saldo
-    
+
     @property
     def limite(self) -> float:
         return self.__limite
-    
+
     @limite.setter
     def limite(self, limite: float) -> None:
         print(f'O limite foi alterado de ${self.limite} para ${limite} do(a) cliente {self.titular}')
         self.__limite = limite
-    
+
     @property
     def extrato(self) -> str:
         return f'Saldo de ${self.saldo} do(a) cliente {self.titular}'
-    
+
     @property
     def valor_total(self) -> float:
         return self.saldo + self.limite
 
     def depositar(self, valor: float) -> None:
         if valor > 0:
-            self.__saldo += valor            
-    
+            self.__saldo += valor
+
     def sacar(self, valor: float) -> None:
         self.__saldo -= valor
-    
+
     def transferir(self, valor: float, destino) -> None:
         self.__saldo -= valor
         destino.__saldo += valor

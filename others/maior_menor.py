@@ -18,7 +18,7 @@ try:
         print('\033[31mDigite um número válido!\033[m')
         n = input('\nQuantos valores irá digitar? ')
     n = int(n)
-    
+
     if n > 0:
         print()
         valores = []

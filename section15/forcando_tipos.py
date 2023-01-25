@@ -18,7 +18,9 @@ def forca_tipo(*tipos):
             for valor, tipo in zip(args, tipos):
                 novo_args.append(tipo(valor))
             return funcao(*novo_args, **kwargs)
+
         return converte
+
     return decorator
 
 

@@ -17,4 +17,3 @@ print(fcp.tupla)
 print(fcp.soma_impares(fcp.lista))
 """
 
-import section10.map

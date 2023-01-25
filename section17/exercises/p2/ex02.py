@@ -1,1 +1,0 @@
-# Path: section17\exercises\p2\ex02.py

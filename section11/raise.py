@@ -40,6 +40,7 @@ def colore(texto, cor):
     print(f"O texto '{texto}' será impresso na cor {cor}")
 """
 
+
 # Exemplo real
 
 

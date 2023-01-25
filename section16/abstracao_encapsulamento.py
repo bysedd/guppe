@@ -45,7 +45,7 @@ print(conta1.__dict__)
 
 class Conta:
     contador: int = 400
-    
+
     def __init__(self, titular: str, saldo: float, limite: float) -> None:
         self.numero: int = Conta.contador
         self.__titular: str = titular
@@ -53,7 +53,7 @@ class Conta:
         self.__limite: float = limite
         self.__taxa: float = 1.05
         Conta.contador += 1
-    
+
     def extrato(self) -> None:
         print(f'Saldo de R${self.__saldo} do titular {self.__titular} com limite de R${self.__limite}')
 
@@ -63,7 +63,7 @@ class Conta:
             print(f'Valor de R${valor} depositado com sucesso')
         else:
             print('O valor precisa ser positivo')
-    
+
     def sacar(self, valor: float) -> None:
         if valor > 0:
             if valor - self.__saldo > self.__limite:
@@ -75,7 +75,7 @@ class Conta:
                 print(f'Valor de R${valor} sacado com sucesso')
         else:
             print('O valor precisa ser positivo')
-    
+
     def transferir(self, valor: float, conta_destino) -> None:
         if valor > 0:
             if valor - self.__saldo > self.__limite:

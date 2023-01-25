@@ -79,6 +79,7 @@ print(rindo())
 """
 from random import choice
 
+
 # Inner Functions (Funções Internas / Nested Functions) podem acessar o escopo de funções mais externas.
 
 
@@ -86,6 +87,7 @@ def faz_me_rir_novamente(pessoa):
     def dando_ridasa():
         risada = choice(('hahahahaha', 'kkkkkkkkkk', 'jajajajaja'))
         return f'{pessoa} — {risada}'
+
     return dando_ridasa
 
 

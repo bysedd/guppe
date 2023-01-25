@@ -29,6 +29,7 @@ print(next(gen2))
 
 # Realizando o teste de velocidade
 import time
+
 qtd = 100000000  # 100 milh�es
 
 # Generator Expression

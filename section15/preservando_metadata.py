@@ -43,6 +43,7 @@ def ver_log(funcao):
         print(f'Você está chamando: {funcao.__name__}()')
         print(f'Sua documentação: {funcao.__doc__}')
         return funcao(*args, **kwargs)
+
     return logar
 
 

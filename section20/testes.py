@@ -1,5 +1,5 @@
 import unittest
-from atividades import comer, dormir
+from atividades import *
 
 
 class AtividadesTestes(unittest.TestCase):
@@ -31,6 +31,28 @@ class AtividadesTestes(unittest.TestCase):
             'Dormi muito! Estou atrasado para o trabalho!'
         )
 
+    def test_engracado(self) -> None:
+        """Testando o retorno da função engracado com pessoas engraçadas"""
+        # self.assertEqual(engracado('Felippe'), True)
+        self.assertFalse(engracado('Sérgio'), False)
+        self.assertTrue(engracado('Jim Carrey'), True)
+
+    def test_par_impar(self) -> None:
+        """Testando o retorno da função par_impar"""
+        self.assertNotEqual(par_impar(3), '3 é par.')
+        self.assertEqual(par_impar(4), '4 é par.')
+
+    def test_flutuante(self) -> None:
+        """Testando o retorno da função flutuante"""
+        self.assertIs(flutuante('3.5'), True)
+        self.assertIsNot(flutuante('abc'), True)
+
+        self.assertIn(flutuante('3.5'), (True, False))
+
+        self.assertIsInstance(flutuante('157.'), bool)
+        self.assertNotIsInstance(flutuante('abc'), (set, tuple, list, dict, str))
+
 
 if __name__ == '__main__':
     unittest.main()
+

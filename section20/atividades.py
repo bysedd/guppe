@@ -19,3 +19,44 @@ def dormir(horas: int) -> str:
     if horas > 8:
         return 'Dormi muito! Estou atrasado para o trabalho!'
     return f'Continuo cansado após dormir por {horas} horas.'
+
+
+def engracado(pessoa: str) -> bool:
+    """
+    Verificar se uma pessoa é engraçada
+    :param pessoa: Nome da pessoa
+    :return: Verdadeiro se a pessoa for engraçada
+    """
+    pessoa = pessoa.strip().title()
+    comediantes = ['Jim Carrey', 'Bozo']
+    if pessoa in comediantes:
+        return True
+    return False
+
+
+def par_impar(numero: int) -> str:
+    """
+    Verificar se um número é par ou ímpar
+    :param numero: Número a ser verificado
+    :return: Uma ‘string’ com a mensagem
+    """
+    if numero % 2 == 0:
+        return f'{numero} é par.'
+    return f'{numero} é ímpar.'
+
+
+def flutuante(numero) -> bool:
+    """
+    Verificar se um número é flutuante
+    :param numero: Número a ser verificado
+    :return: Verdadeiro se o número for flutuante
+    """
+    # Converter o número para float
+    try:
+        numero = float(numero)
+        # Verificar se o número é flutuante
+        if isinstance(numero, float) or numero.is_integer():
+            return True
+        return False
+    except ValueError:
+        return False

@@ -9,7 +9,7 @@ print(nome)
 # Exemplo de função
 print(nome := 'Geek University')
 
-# <= Python 3.7
+# Python 3.7 - Versão anterior ao operador Walrus
 cesta = []
 fruta = input('Informe a fruta: ').strip().lower()
 while fruta != 'jaca':
@@ -19,8 +19,8 @@ print(f'Você comprou {len(cesta)} frutas')
 
 """
 
-# >= Python 3.8
-cesta = []
+# Python 3.8 - Versão com o operador Walrus (:=)
+cesta: list[str] = []
 while (fruta := input('Informe a fruta: ').strip().lower()) != 'jaca':
     cesta.append(fruta)
 print(f'Você comprou {len(cesta)} frutas')

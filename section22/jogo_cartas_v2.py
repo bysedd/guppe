@@ -1,5 +1,5 @@
 import random
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Final
 
 # https://www.alt-codes.net/suit-cards.php
 
@@ -8,10 +8,10 @@ NAIPES: List[str] = '♠ ♥ ♦ ♣'.split()
 CARTAS: List[str] = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
 # Tipo Alias para representar uma carta como par (nipe, valor)
-CARTA = Tuple[str, str]
+CARTA: Final = Tuple[str, str]
 
 # Tipo Alias para representar o baralho como uma lista de cartas
-BARALHO = List[CARTA]
+BARALHO: Final = List[CARTA]
 
 
 def criar_baralho(aleatorio: bool = False) -> BARALHO:

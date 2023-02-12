@@ -31,7 +31,3 @@ def jogar(pontos: int = 0) -> None:
     # Mostra a pontuação final
     print(f'Você finalizou o jogo com {pontos} ponto(s).')
     print('Até a próxima!')
-
-
-if __name__ == '__main__':
-    jogar()

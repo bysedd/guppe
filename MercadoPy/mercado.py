@@ -11,7 +11,7 @@ class Mercado:
     produtos: List[Produto] = []
     carrinho: List[Dict[Produto, int]] = []
     tracos: str = '=' * 50
-    ARQUIVO: str = './utils/produtos.pickle'
+    ARQUIVO: str = './data/produtos.txt'
 
     def __init__(self) -> None:
         if os.path.exists(Mercado.ARQUIVO):

@@ -1,4 +1,7 @@
+import sys
 from random import randint
+
+sys.set_int_max_str_digits(99999999)
 
 
 class Calculator:
@@ -25,6 +28,10 @@ class Calculator:
     def operacao(self) -> int:
         return self.__operacao
 
+    @operacao.setter
+    def operacao(self, operacao: int) -> None:
+        self.__operacao = operacao
+
     @property
     def resultado(self) -> float:
         return self.__resultado
@@ -38,10 +45,8 @@ class Calculator:
                 return randint(0, 100)
             case 3:
                 return randint(0, 1000)
-            case 4:
-                return randint(0, 10000)
             case _:
-                return randint(0, 100000)
+                return randint(0, 10000)
 
     @property
     def _operador(self) -> str:
@@ -68,6 +73,8 @@ class Calculator:
         return certo
 
     def mostrar_operacao(self) -> str:
+        if self.dificuldade not in (1, 2, 3, 4):
+            return f'{self.valor1} ** {self.valor2}'
         return f'{self.valor1} {self._operador} {self.valor2}'
 
     def __str__(self) -> str:
@@ -79,7 +86,7 @@ class Calculator:
             case 3:
                 operacao = 'Multiplicar'
             case _:
-                operacao = 'Operação desconhecida'
+                operacao = 'Exponenciar'
 
         return f'{self.valor1: } \n' \
                f'{self.valor2: } \n' \

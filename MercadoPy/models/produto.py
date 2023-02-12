@@ -15,9 +15,17 @@ class Produto:
     def nome(self) -> str:
         return self.__nome
 
+    @nome.setter
+    def nome(self, nome: str) -> None:
+        self.__nome = nome
+
     @property
     def preco(self) -> float:
         return self.__preco
+
+    @preco.setter
+    def preco(self, preco: float) -> None:
+        self.__preco = preco
 
     def __str__(self) -> str:
         return f'id: {self.id}\n' \

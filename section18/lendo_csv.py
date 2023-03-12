@@ -1,4 +1,4 @@
-"""
+r"""
 Lendo arquivos CSV
 
 CSV - Comma-separated values - Valores separados por vírgula

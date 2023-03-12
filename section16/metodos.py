@@ -69,7 +69,7 @@ from passlib.hash import pbkdf2_sha256 as crypt
 class Lampada:
 
     def __init__(self, cor: str, voltagem: int, luminosidade: int):
-        pass
+        raise NotImplementedError()
 
 
 class ContaCorrente:

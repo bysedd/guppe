@@ -28,7 +28,6 @@ class Gato(Animal):
     def __init__(self, nome: str, especie: str, raca: str) -> None:
         # Animal.__init__(self, nome, especie)
         super().__init__(nome, especie)  # recomendado
-        self.__raca = raca
 
 
 felix = Gato('felix', 'gato', 'angorá')

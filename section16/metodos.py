@@ -66,10 +66,7 @@ print(user._Usuario__gera_usuario())  # Name Mangling
 
 class Lampada:
     def __init__(self, cor: str, voltagem: int, luminosidade: int):
-        self.__cor = cor
-        self.__voltagem = voltagem
-        self.__luminosidade = luminosidade
-        self.__ligada = False
+        pass
 
 
 class ContaCorrente:
@@ -77,8 +74,6 @@ class ContaCorrente:
 
     def __init__(self, limite: float, saldo: float):
         self.__numero = ContaCorrente.contador + 1
-        self.__limite = limite
-        self.__saldo = saldo
         ContaCorrente.contador = self.__numero
 
 
@@ -87,8 +82,6 @@ class Produto:
 
     def __init__(self, nome: str, descricao: str, valor: float):
         self.__id = Produto.contador + 1
-        self.__nome = nome
-        self.__descricao = descricao
         self.__valor = valor
         Produto.contador = self.__id
 

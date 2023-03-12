@@ -118,7 +118,6 @@ class Pessoa:
     def __init__(self, nome: str, sobrenome: str, cpf: str):
         self.__nome = nome
         self.__sobrenome = sobrenome
-        self.__cpf = cpf
 
     def nome_completo(self):
         return f'{self.__nome} {self.__sobrenome}'
@@ -129,7 +128,6 @@ class Cliente(Pessoa):
 
     def __init__(self, nome: str, sobrenome: str, cpf: str, renda: float):
         Pessoa.__init__(self, nome, sobrenome, cpf)  # Forma não comum de acessar dados da super classe
-        self.__renda = renda
 
 
 class Funcionario(Pessoa):
